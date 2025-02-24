@@ -29,11 +29,11 @@ function Sidebar() {
       {/* Sidebar */}
       {isNavOpen && (
         <aside className="w-64 bg-white p-4 h-screen flex flex-col justify-start gap-6 shadow-md">
-          <div className="flex justify-end">
+          <div className="flex ml-60 justify-center items-center">
             {/* Close Sidebar Button */}
             <button
               onClick={() => setIsNavOpen(false)}
-              className="text-xl  px-2 rounded"
+              className="text-xl border mt-6   border-gray-300 rounded-full   px-2 "
             >
               &lt;
             </button>
@@ -114,7 +114,7 @@ function Sidebar() {
           </div>
 
           {/* Settings Section */}
-          <div className="border-t border-gray-300 pt-4 text-black">
+          <div className="border-t border-gray-300 pt-4 text-gray-600">
             <p className="text-gray-600 font-semibold">Settings</p>
             <ul>
               <li

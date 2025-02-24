@@ -1,8 +1,8 @@
 import { useState } from "react";
-import Sidebar from "./Sidebar";
-import Filters from "./Filters";
-import OrdersTable from "./OrdersTable";
-import Navbar from "./Navbar";
+import Sidebar from "../components/Sidebar";
+import Filters from "../components/Filters";
+import OrdersTable from "../components/OrdersTable";
+import Navbar from "../components/Navbar";
 export default function OrdersPage() {
   const [filters, setFilters] = useState({
     searchTerm: "",
@@ -85,8 +85,8 @@ export default function OrdersPage() {
     <div className="flex h-screen">
       <Sidebar />
       <main className="flex-1 p-6 ml-4">
-        <Navbar></Navbar>
-        <h1 className="text-lg font-semibold ml-7">All Orders</h1>
+        <Navbar />
+        <h1 className="text-2xl font-semibol  ml-7">All Orders</h1>
         <Filters
           onFilterChange={setFilters}
           onClearFilters={() =>
